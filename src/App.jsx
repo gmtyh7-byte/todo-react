@@ -83,8 +83,7 @@ function App(props) {
     setTasks([...tasks, newTask]);
   }
 
-  const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
-  const headingText = `${taskList.length} ${tasksNoun} remaining`;
+  const headingText = `남은 운동 ${taskList.length}개`;
 
   const listHeadingRef = useRef(null);
   const prevTaskLength = usePrevious(tasks.length);
@@ -97,7 +96,7 @@ function App(props) {
 
   return (
     <div className="todoapp stack-large">
-      <h1>TodoMatic</h1>
+      <h1>운동 체크리스트</h1>
       <Form addTask={addTask} />
       <div className="filters btn-group stack-exception">{filterList}</div>
       <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
