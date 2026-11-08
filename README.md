@@ -52,7 +52,7 @@ This project is licensed under the [LICENSE](LICENSE).
 - 원본 GitHub URL 및 라이선스: https://github.com/mdn/todo-react, MPL-2.0 (라이선스 파일 존재)
 # Installation: 
 - 설치·실행 방법: fork로 개인레포에 저장했고 클론 떴습니다. 이후 ai의 도움을 받아 기본 세팅 후 필요한 github 주소를 연결했고 npm install, npm run dev 진행했습니다.
-- 실행 화면: 
+- 실행 화면: ![변경 전](./images/before.png)
 # Source Code Exploration: 주요 파일, 컴포넌트, 코드 분석
 ## Project Structure: 주요 파일 2~3개의 역할
 - main.jsx: data를 <App tasks={DATA} />로 주고 root에 렌더링한다. 초기 데이터 또한 여기에 있다.
