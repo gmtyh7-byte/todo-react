@@ -293,4 +293,78 @@ body {
 .c-cb > input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }
-/* End checkbox styles */
+
+
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+.todoapp {
+  background: #1e1e1e;
+  border: 2px solid #b6ff3b;
+  border-radius: 2rem;
+  box-shadow: 0 0 2.4rem rgb(182 255 59 / 30%);
+}
+.todoapp > h1 {
+  color: #b6ff3b;
+  font-size: 3.4rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+#list-heading {
+  color: #ff7a1a;
+}
+.input__lg,
+.todo-text {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 2px solid #b6ff3b;
+  border-radius: 1.2rem;
+}
+.input__lg:focus-visible {
+  border-color: #fff;
+}
+.btn {
+  border-color: #b6ff3b;
+  border-radius: 3rem;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.btn:hover {
+  background-color: #b6ff3b;
+  color: #121212;
+  transform: translateY(-2px);
+}
+.btn__primary {
+  background-color: #b6ff3b;
+  color: #121212;
+}
+.btn__primary:hover {
+  background-color: #d4ff7a;
+}
+.btn__danger {
+  background-color: #ff5252;
+  border-color: #ff5252;
+  color: #fff;
+}
+.btn__danger:hover {
+  background-color: #ff1744;
+  color: #fff;
+}
+.btn.toggle-btn[aria-pressed="true"] {
+  background-color: #b6ff3b;
+  border-color: #b6ff3b;
+  color: #121212;
+  text-decoration: none;
+}
+.todo {
+  background-color: #262626;
+  border-left: 0.6rem solid #b6ff3b;
+  border-radius: 1.2rem;
+  padding: 1.2rem 1.6rem;
+}
+.c-cb > input[type="checkbox"]:checked + label {
+  color: #b6ff3b;
+  text-decoration: line-through;
+}
