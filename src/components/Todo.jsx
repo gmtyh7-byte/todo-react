@@ -51,11 +51,11 @@ function Todo(props) {
           type="button"
           className="btn todo-cancel"
           onClick={() => setEditing(false)}>
-          Cancel
+          취소
           <span className="visually-hidden">renaming {props.name}</span>
         </button>
         <button type="submit" className="btn btn__primary todo-edit">
-          Save
+          저장
           <span className="visually-hidden">new name for {props.name}</span>
         </button>
       </div>
@@ -83,13 +83,13 @@ function Todo(props) {
             setEditing(true);
           }}
           ref={editButtonRef}>
-          Edit <span className="visually-hidden">{props.name}</span>
+          수정 <span className="visually-hidden">{props.name}</span>
         </button>
         <button
           type="button"
           className="btn btn__danger"
           onClick={() => props.deleteTask(props.id)}>
-          Delete <span className="visually-hidden">{props.name}</span>
+          삭제 <span className="visually-hidden">{props.name}</span>
         </button>
       </div>
     </div>
