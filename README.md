@@ -44,3 +44,21 @@ By participating in and contributing to our projects and discussions, you acknow
 ## License
 
 This project is licensed under the [LICENSE](LICENSE).
+
+
+# Project Structure: 주요 파일 2~3개의 역할
+- main.jsx: data를 <App tasks={DATA} />로 주고 root에 렌더링한다. 초기 데이터 또한 여기에 있다.
+- Form.jsx: 입력창과 add 버튼 관리
+# React Component: 주요 컴포넌트 1~2개의 역할
+- <Form/>: 새 정보를 입력받는 컴포넌트이다. 
+# Code Analysis: 코드 1개(약 5~15줄)를 선택하여 동작 원리 설명
+-   function toggleTaskCompleted(id) {
+    const updatedTasks = tasks.map((task) => {
+      if (id === task.id) {
+        return { ...task, completed: !task.completed };
+      }
+      return task;
+    });
+    setTasks(updatedTasks);
+  }
+체크박스에 체크한 항목의 id를 받아 새로운 배열을 만들고  if (id === task.id) 로 사용자가 선택한 항목만 선택 이후 나머지는 유지하면서 complted만 !로 변경 이후 react에 변경된 상태 등록후 화면에 표시
