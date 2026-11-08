@@ -50,7 +50,7 @@ This project is licensed under the [LICENSE](LICENSE).
 - main.jsx: data를 <App tasks={DATA} />로 주고 root에 렌더링한다. 초기 데이터 또한 여기에 있다.
 - Form.jsx: 입력창과 add 버튼 관리
 # React Component: 주요 컴포넌트 1~2개의 역할
-- <Form/>: 새 정보를 입력받는 컴포넌트이다. 
+- Form/: 새 정보를 입력받는 컴포넌트이다. 
 # Code Analysis: 코드 1개(약 5~15줄)를 선택하여 동작 원리 설명
 -   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map((task) => {
